@@ -15,7 +15,8 @@
     margin: 30px auto;
     width: 210px;
     padding: 40px;
-    border: 2px solid green;
+    border: 1px solid gray;
+    text-align: center
 }
 
 .dataForm span {
@@ -25,24 +26,23 @@
 
 .dataForm input {
     display: block;
-    margin: 10px;
+    margin: 10px auto;;
+    padding: 3px;
+    color:darkgray;
 }
 
 .dataForm button {
-    background-color: #CB3B4F;
+    /*background-color: #CB3B4F;*/
     margin: 20px;
-    padding: 25px;
-    border-radius: 15px;
-    font-size: 20px;
-    color: white;
+    padding: 3px;
+    font-size: 14px;
+    font-weight: 200;
+    /*color: white;*/
 }
 
 .success {
+    margin: 30px auto;
+    width: 210px;
     margin: 50px;
-    border-bottom: 1px solid #000;
-}
-
-.success h2 {
-    font-size: 60px;
-    color: green;
+    text-align: center;
 }
