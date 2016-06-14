@@ -4,33 +4,37 @@
 
 window.onload = function () {
 
-    document.getElementById("success").style.display = "none";
-
-    var formData = [];
+    var formData = {};
 
     var button = document.getElementById("button");
-
     button.addEventListener("click", sendData);
 
 
     function sendData () {
+        var dataObj = getFormData();
+        var dataJSON = JSON.stringify(dataObj);
 
-        console.log(getFormData());
+        //Дописати куда відправляти JSON або прописати action в формі
+        console.log(dataJSON);
+
         showSuccess();
     }
 
     function getFormData () {
         var name = document.getElementById("name").value;
         var phone = document.getElementById("phone").value;
+        var currentLink = window.location.href;
 
-        formData.push(name);
-        formData.push(phone);
+        formData.name = name;
+        formData.phone = phone;
+        formData.currentLink = currentLink;
 
         return formData;
     }
 
     function showSuccess () {
-        document.getElementById("dataForm").style.display = "none";
-        document.getElementById("success").style.display = "block";
+        document.getElementById("dataForm").classList.add("hide");
+        document.getElementById("success").classList.remove("hide");
+        document.getElementById("success").classList.add("show");
     }
 }

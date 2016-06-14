@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.dataForm {
+    margin: 30px auto;
+    width: 210px;
+    padding: 40px;
+    border: 2px solid green;
+}
+
+.dataForm span {
+    font-size: 20px;
+    color: chocolate;
+}
+
+.dataForm input {
+    display: block;
+    margin: 10px;
+}
+
+.dataForm button {
+    background-color: #CB3B4F;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.success {
+    margin: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.success h2 {
+    font-size: 60px;
+    color: green;
+}
